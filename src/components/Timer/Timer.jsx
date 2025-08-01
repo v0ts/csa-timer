@@ -32,7 +32,7 @@ export const Timer = () => {
 		} else if (level === 'L2') {
 			setTime(60 * 6)
 		} else if (level === 'L1') {
-			setTime(60 * 4)
+			setTime(60 * 5)
 		} else {
 			setTime(0)
 		}
@@ -304,7 +304,7 @@ export const Timer = () => {
 		} else if (level === 'L2') {
 			setTime(60 * 6)
 		} else if (level === 'L1') {
-			setTime(60 * 4)
+			setTime(60 * 5)
 		} else {
 			setTime(0)
 		}
@@ -344,7 +344,7 @@ export const Timer = () => {
 		} else if (level === 'L2') {
 			allTime = 60 * 6
 		} else if (level === 'L1') {
-			allTime = 60 * 4
+			allTime = 60 * 5
 		} else {
 			allTime = 0
 		}
