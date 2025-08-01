@@ -1,0 +1,113 @@
+.timer {
+	padding-top: 50px;
+	min-height: 100vh;
+	background-color: var(--bg-dark);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.levels {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+
+	margin-bottom: 50px;
+}
+
+.levelItem {
+	padding: 20px;
+	padding-right: 60px;
+	background-color: var(--bg);
+	border-radius: 20px;
+	border: 1px solid var(--border-muted);
+	position: relative;
+	flex: 1;
+	min-width: 150px;
+}
+
+.small {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	cursor: pointer;
+}
+
+.small::before {
+	content: '';
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 20px;
+	height: 20px;
+	background-color: none;
+	border: 2px solid var(--text);
+	border-radius: 50%;
+}
+
+.small:checked::before {
+	border: solid 2px var(--success);
+	background-color: var(--success);
+	background-size: cover;
+}
+
+.levelLabel {
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: var(--text-muted);
+}
+
+.levelName {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.levelValue {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.levelDescription {
+	text-align: center;
+	min-width: 170px;
+}
+
+.timers {
+	display: flex;
+	gap: 100px;
+	justify-content: center;
+	align-items: center;
+}
+
+.setup {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.setupText {
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+	min-width: 120px;
+
+	cursor: pointer;
+}
+
+.setupButton {
+	background-color: var(--primary);
+	border: none;
+	border-radius: 15px;
+	padding: 10px 20px;
+	cursor: pointer;
+
+	transition: all 250ms;
+}
+
+.setupButton:hover { 
+	transform: scale(1.1);
+}
