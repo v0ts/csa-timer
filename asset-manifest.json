@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/csa-timer/static/css/main.1474406c.css",
+    "main.js": "/csa-timer/static/js/main.b7656eea.js",
+    "static/media/timer.mp3": "/csa-timer/static/media/timer.f2f1383ee704a12b5a62.mp3",
+    "index.html": "/csa-timer/index.html",
+    "main.1474406c.css.map": "/csa-timer/static/css/main.1474406c.css.map",
+    "main.b7656eea.js.map": "/csa-timer/static/js/main.b7656eea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1474406c.css",
+    "static/js/main.b7656eea.js"
+  ]
+}
