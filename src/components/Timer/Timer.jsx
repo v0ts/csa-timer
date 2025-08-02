@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import style from './Timer.module.scss'
-import { ToastContainer, toast, Zoom, CloseButton } from 'react-toastify'
+import { ToastContainer, toast, Zoom } from 'react-toastify'
 import timerSound from '../../sounds/timer.mp3'
 import { useSound } from 'react-sounds'
 
@@ -61,7 +61,7 @@ export const Timer = () => {
 
 			return () => clearInterval(interval)
 		}
-	}, [setup])
+	}, [setup, isSetupStart])
 
 	useEffect(() => {
 		if (isCutted) {
@@ -118,7 +118,7 @@ export const Timer = () => {
 		if (interval) {
 			return () => clearInterval(interval)
 		}
-	}, [time])
+	}, [time, isCutted, isTimeStart, play])
 
 	const runningCheck = () => {
 		let output = false
